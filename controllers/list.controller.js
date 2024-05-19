@@ -63,6 +63,7 @@ export const createList = async (req, res) => {
             await list.save();
 
             res.json({
+                list_id: list._id,
                 added: users.length,
                 errors: errors.length,
                 total: users.length + errors.length,

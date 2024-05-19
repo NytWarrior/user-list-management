@@ -3,6 +3,6 @@ import { unsubscribeUser } from '../controllers/user.controller.js';
 
 const router = express.Router();
 
-router.get('/lists/:listId/users/:userId/unsubscribe', unsubscribeUser);
+router.put('/lists/:listId/users/:userId/unsubscribe', unsubscribeUser);
 
 export default router;
